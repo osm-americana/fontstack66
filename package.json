@@ -13,7 +13,7 @@
     "clean-download": "shx rm -rf download",
     "clean-build": "shx rm -rf dist build",
     "code_format": "prettier --write --list-different .",
-    "fonts:install_glyph_builder": "cargo install build_pbf_glyphs@1.3.0",
+    "fonts:install_glyph_builder": "cargo install build_pbf_glyphs@1.4.1",
     "fonts:build": "node fonts",
     "fonts": "run-s fonts:install_glyph_builder fonts:build"
   },
