@@ -14,10 +14,8 @@
     "Noto Sans Gurmukhi": ["regular", "700"],
     "Noto Sans Hebrew": ["regular", "700"],
     "Noto Rashi Hebrew": ["regular", "700"],
-    "M PLUS Rounded 1c": ["regular", "700"],
     "Noto Sans Kannada": ["regular", "700"],
     "Noto Sans Khmer": ["regular", "700"],
-    "Noto Sans KR": ["regular", "700"],
     "Noto Sans Lao": ["regular", "700"],
     "Noto Sans Malayalam": ["regular", "700"],
     "Noto Sans Myanmar": ["regular", "700"],
@@ -196,20 +194,12 @@
         "ranges": ["hebrew"]
       },
       {
-        "file": "MPlusRounded1C-regular",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
-      {
         "file": "NotoSansKannada-regular",
         "ranges": ["kannada"]
       },
       {
         "file": "NotoSansKhmer-regular",
         "ranges": ["khmer"]
-      },
-      {
-        "file": "NotoSansKr-regular",
-        "ranges": ["space", "hangul"]
       },
       {
         "file": "NotoSansLao-regular",
@@ -268,10 +258,6 @@
       {
         "file": "NotoSansKr-700",
         "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-700",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
       },
       {
         "file": "NotoSansArabic-700",
@@ -380,14 +366,6 @@
     ],
     "Americana-Italic": [
       {
-        "file": "NotoSansKr-regular",
-        "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-regular",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
-      {
         "file": "NotoSansArabic-regular",
         "ranges": ["arabic"]
       },
@@ -493,14 +471,6 @@
       }
     ],
     "Americana-Bold-Italic": [
-      {
-        "file": "NotoSansKr-700",
-        "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-700",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
       {
         "file": "NotoSansArabic-700",
         "ranges": ["arabic"]
