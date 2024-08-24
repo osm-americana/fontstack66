@@ -1,7 +1,5 @@
 {
   "font-families": {
-    "Gothic A1": ["regular", "700"],
-    "M PLUS Rounded 1c": ["regular", "700"],
     "Noto Sans": ["regular", "700", "italic", "700italic"],
     "Noto Sans Arabic": ["regular", "700"],
     "Noto Naskh Arabic": ["regular", "700"],
@@ -16,8 +14,10 @@
     "Noto Sans Gurmukhi": ["regular", "700"],
     "Noto Sans Hebrew": ["regular", "700"],
     "Noto Rashi Hebrew": ["regular", "700"],
+    "M PLUS Rounded 1c": ["regular", "700"],
     "Noto Sans Kannada": ["regular", "700"],
     "Noto Sans Khmer": ["regular", "700"],
+    "Noto Sans KR": ["regular", "700"],
     "Noto Sans Lao": ["regular", "700"],
     "Noto Sans Malayalam": ["regular", "700"],
     "Noto Sans Myanmar": ["regular", "700"],
@@ -152,14 +152,6 @@
   "custom-font-stacks": {
     "Americana-Regular": [
       {
-        "file": "GothicA1-regular",
-        "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-regular",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
-      {
         "file": "NotoSansArabic-regular",
         "ranges": ["arabic"]
       },
@@ -204,12 +196,20 @@
         "ranges": ["hebrew"]
       },
       {
+        "file": "MPlusRounded1C-regular",
+        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
+      },
+      {
         "file": "NotoSansKannada-regular",
         "ranges": ["kannada"]
       },
       {
         "file": "NotoSansKhmer-regular",
         "ranges": ["khmer"]
+      },
+      {
+        "file": "NotoSansKr-regular",
+        "ranges": ["space", "hangul"]
       },
       {
         "file": "NotoSansLao-regular",
@@ -266,7 +266,7 @@
     ],
     "Americana-Bold": [
       {
-        "file": "GothicA1-700",
+        "file": "NotoSansKr-700",
         "ranges": ["space", "hangul"]
       },
       {
@@ -380,7 +380,7 @@
     ],
     "Americana-Italic": [
       {
-        "file": "GothicA1-regular",
+        "file": "NotoSansKr-regular",
         "ranges": ["space", "hangul"]
       },
       {
@@ -494,7 +494,7 @@
     ],
     "Americana-Bold-Italic": [
       {
-        "file": "GothicA1-700",
+        "file": "NotoSansKr-700",
         "ranges": ["space", "hangul"]
       },
       {
