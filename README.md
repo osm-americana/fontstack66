@@ -7,7 +7,7 @@ The Americana fontstack is built from [Google Fonts](https://fonts.google.com/).
 ## Usage
 
 ```json
-glyphs: "https://osm-americana.github.io/fontstack66/{fontstack}/{range}.pbf"
+glyphs: "https://font.americanamap.org/{fontstack}/{range}.pbf"
 ```
 
 Then, in a maplibre-gl stylesheet, you can use the packaged fonts like such:
