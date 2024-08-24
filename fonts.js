@@ -89,10 +89,6 @@ loadGoogleFonts(bundleFontStacks, bundleFontFolder);
 copyFolderContents(bundleFontFolder, ttfFontFolder);
 
 for (const stack in customFontStacks) {
-  // Set to track seen unicode codepoints
-  const seenCodepoints = new Set();
-
-  console.log(`Building ${stack}`);
   let font;
   for (const stackPart in customFontStacks[stack]) {
     let stackPartDef = customFontStacks[stack][stackPart];
@@ -110,27 +106,14 @@ for (const stack in customFontStacks) {
           subsetRange[0],
           subsetRange[1]
         );
-
-        // Filter out glyphs that have already been added
-        const filteredGlyphArray = subsetGlyphArray.filter((codepoint) => {
-          if (seenCodepoints.has(codepoint)) {
-            console.log("DUPE");
-            return false;
-          } else {
-            seenCodepoints.add(codepoint);
-            return true;
-          }
-        });
-
         const fontSegment = Font.create(inputFontBuffer, {
           type: "ttf",
-          subset: filteredGlyphArray, // Use the filtered array
+          subset: subsetGlyphArray,
           hinting: true,
           compound2simple: true,
           inflate: null,
           combinePath: false,
         });
-
         if (font === undefined) {
           font = fontSegment;
           font.data.name = {
@@ -162,8 +145,6 @@ for (const stack in customFontStacks) {
   fs.writeFileSync(ttfFile, outputBuffer);
   console.log(`Built ${ttfFile}`);
 }
-
-console.log(`..done`);
 
 const pbfBuilderFilename = "~/.cargo/bin/build_pbf_glyphs";
 
