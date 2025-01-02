@@ -1,7 +1,5 @@
 {
   "font-families": {
-    "Gothic A1": ["regular", "700"],
-    "M PLUS Rounded 1c": ["regular", "700"],
     "Noto Sans": ["regular", "700", "italic", "700italic"],
     "Noto Sans Arabic": ["regular", "700"],
     "Noto Naskh Arabic": ["regular", "700"],
@@ -152,14 +150,6 @@
   "custom-font-stacks": {
     "Americana-Regular": [
       {
-        "file": "GothicA1-regular",
-        "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-regular",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
-      {
         "file": "NotoSansArabic-regular",
         "ranges": ["arabic"]
       },
@@ -261,18 +251,10 @@
       },
       {
         "file": "NotoSans-regular",
-        "ranges": ["cyrillic", "greek", "latin"]
+        "ranges": ["cyrillic", "greek", "latin", "space"]
       }
     ],
     "Americana-Bold": [
-      {
-        "file": "GothicA1-700",
-        "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-700",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
       {
         "file": "NotoSansArabic-700",
         "ranges": ["arabic"]
@@ -375,18 +357,10 @@
       },
       {
         "file": "NotoSans-700",
-        "ranges": ["cyrillic", "greek", "latin"]
+        "ranges": ["cyrillic", "greek", "latin", "space"]
       }
     ],
     "Americana-Italic": [
-      {
-        "file": "GothicA1-regular",
-        "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-regular",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
       {
         "file": "NotoSansArabic-regular",
         "ranges": ["arabic"]
@@ -489,18 +463,10 @@
       },
       {
         "file": "NotoSans-italic",
-        "ranges": ["cyrillic", "greek", "latin"]
+        "ranges": ["cyrillic", "greek", "latin", "space"]
       }
     ],
     "Americana-Bold-Italic": [
-      {
-        "file": "GothicA1-700",
-        "ranges": ["space", "hangul"]
-      },
-      {
-        "file": "MPlusRounded1C-700",
-        "ranges": ["fullwidth", "hiragana", "kanbun", "katakana"]
-      },
       {
         "file": "NotoSansArabic-700",
         "ranges": ["arabic"]
@@ -603,7 +569,7 @@
       },
       {
         "file": "NotoSans-700italic",
-        "ranges": ["cyrillic", "greek", "latin"]
+        "ranges": ["cyrillic", "greek", "latin", "space"]
       }
     ]
   }
